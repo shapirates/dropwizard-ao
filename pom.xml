@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.shapirates.dropwizard</groupId>
+  <artifactId>dropwizard-ao</artifactId>
+  <version>1.0.1</version>
+  <name>Dropwizard AO Bundle</name>
+  <description>Addon bundle for Dropwizard to support Active Objects for database access</description>
+  <properties>
+    <dropwizard.version>1.3.12</dropwizard.version>
+    <atlassian.beehive.version>0.1.3</atlassian.beehive.version>
+    <commons.version>1.12</commons.version>
+    <sal.version>3.0.0</sal.version>
+    <ao.version>2.0.0</ao.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.atlassian.activeobjects</groupId>
+      <artifactId>activeobjects-plugin</artifactId>
+      <version>${ao.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>${commons.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.dropwizard</groupId>
+      <artifactId>dropwizard-db</artifactId>
+      <version>${dropwizard.version}</version>
+    </dependency>
+<dependency>
+    <groupId>com.atlassian.sal</groupId>
+    <artifactId>sal-api</artifactId>
+    <version>3.0.0</version>
+    <scope>provided</scope>
+</dependency>
+  </dependencies>
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>atlassian</id>
+      <name>atlassian maven repo</name>
+      <url>https://packages.atlassian.com/maven-public-local</url>
+    </repository>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>spring</id>
+      <name>Spring Plugins</name>
+      <url>http://repo.spring.io/plugins-release</url>
+    </repository>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+  </repositories>
+</project>
